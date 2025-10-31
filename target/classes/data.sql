@@ -1,6 +1,3 @@
--- Dados de exemplo para testes
--- Arquivo: src/main/resources/data.sql
-
 -- Inserir clientes
 INSERT INTO clientes (nome, email, telefone, endereco, data_cadastro, ativo) VALUES
                                                                                  ('João Silva', 'joao@email.com', '(11) 99999-1111', 'Rua A, 123 - São Paulo/SP', CURRENT_TIMESTAMP, true),
