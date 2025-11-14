@@ -1,7 +1,8 @@
-package com.deliverytech.deliveryapi.service;
+package com.deliverytech.deliveryapi.services;
 
-import com.delivery_api.Projeto.Delivery.API.entity.Produto;
-import com.delivery_api.Projeto.Delivery.API.repository.ProdutoRepository;
+import com.deliverytech.deliveryapi.entity.Produto;
+
+import com.deliverytech.deliveryapi.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

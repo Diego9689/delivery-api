@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Optional;
 //src/main/java/com/deliverytech/deliveryapi
 
-import com.deliveryapi.dto.response.ClienteResponseDTO;
+import com.deliverytech.deliveryapi.dto.response.ClienteResponseDTO;
 import com.deliverytech.deliveryapi.dto.request.ClienteRequestDTO;
 import com.deliverytech.deliveryapi.entity.Cliente;
 import com.deliverytech.deliveryapi.services.ClienteService;

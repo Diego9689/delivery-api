@@ -1,8 +1,10 @@
-package com.deliverytech.deliveryapi.service;
+package com.deliverytech.deliveryapi.services;
 
-import com.delivery_api.Projeto.Delivery.API.entity.Cliente;
-import com.delivery_api.Projeto.Delivery.API.repository.ClienteRepository;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.deliverytech.deliveryapi.entity.Cliente;
+import com.deliverytech.deliveryapi.repository.ClienteRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

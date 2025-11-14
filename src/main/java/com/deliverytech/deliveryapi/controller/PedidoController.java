@@ -1,11 +1,14 @@
 package com.deliverytech.deliveryapi.controller;
 
-import com.delivery_api.Projeto.Delivery.API.entity.Pedido;
-import com.delivery_api.Projeto.Delivery.API.service.PedidoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+
+import com.deliverytech.deliveryapi.entity.Pedido;
+import com.deliverytech.deliveryapi.services.PedidoService;
+
 import org.springframework.validation.annotation.Validated;
 
 import java.util.List;

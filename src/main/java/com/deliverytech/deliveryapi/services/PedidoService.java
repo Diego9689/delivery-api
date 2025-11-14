@@ -1,12 +1,13 @@
-package com.deliverytech.deliveryapi.service;
+package com.deliverytech.deliveryapi.services;
 
-import com.delivery_api.Projeto.Delivery.API.entity.Pedido;
-import com.delivery_api.Projeto.Delivery.API.repository.PedidoRepository;
-import com.delivery_api.Projeto.Delivery.API.repository.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+
+import com.deliverytech.deliveryapi.entity.Pedido;
+import com.deliverytech.deliveryapi.repository.ClienteRepository;
+import com.deliverytech.deliveryapi.repository.PedidoRepository;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;

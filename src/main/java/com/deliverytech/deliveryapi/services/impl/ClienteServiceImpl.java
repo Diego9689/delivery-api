@@ -1,4 +1,4 @@
-package com.deliverytech.deliveryapi.service.impl;
+package com.deliverytech.deliveryapi.services.impl;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
