@@ -1,4 +1,7 @@
-package com.delivery_api.Projeto.Delivery.API.entity;
+package com.deliverytech.delivery_api.entity;
+
+import java.math.BigDecimal;
+import java.util.List;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -18,13 +21,17 @@ public class Restaurante {
 
     private String nome;
 
+    private String categoria;
+
     private String endereco;
 
     private String telefone;
 
-    private String categoria; // Ex: "Pizza", "Japonesa", "Lanches"
+    @Column(name = "taxa_entrega")
+    private BigDecimal taxaEntrega;
 
-    @Column(nullable = true)
+    private BigDecimal avaliacao;
+
     private Boolean ativo;
 
     public void inativar() {

@@ -1,11 +1,12 @@
-package com.delivery_api.Projeto.Delivery.API.entity;
+package com.deliverytech.delivery_api.entity;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -18,31 +19,26 @@ public class Pedido {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    // Relacionamento com Cliente
-    @ManyToOne
-    @JoinColumn(name = "cliente_id", nullable = false)
-    private Cliente cliente;
+    @Column(name = "numero_pedido")
+    private String numeroPedido;
 
-    // Status do pedido (ex: PENDENTE, EM_PREPARO, ENTREGUE, CANCELADO)
-    private String status;
-
-    // Endereço de entrega (pode ser diferente do endereço do cliente)
-    private String enderecoEntrega;
-
-    // Data e hora do pedido
     @Column(name = "data_pedido")
     private LocalDateTime dataPedido;
 
-    // Valor total do pedido
+    private String status;
+
     @Column(name = "valor_total")
-    private Double valorTotal;
+    private BigDecimal valorTotal;
 
-    // Campo para controle de cancelamento (soft delete)
-    @Column(nullable = true)
-    private Boolean ativo;
+    private String observacoes;
 
-    public void cancelar() {
-        this.ativo = false;
-        this.status = "CANCELADO";
-    }
+    @Column(name = "cliente_id")
+    private Long clienteId;
+
+    @ManyToOne
+    @JoinColumn(name = "restaurante_id")
+    private Restaurante restaurante;
+
+    private String itens;
+
 }

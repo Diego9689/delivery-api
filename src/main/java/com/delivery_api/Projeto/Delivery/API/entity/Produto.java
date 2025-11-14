@@ -1,4 +1,7 @@
-package com.delivery_api.Projeto.Delivery.API.entity;
+package com.deliverytech.delivery_api.entity;
+
+import java.math.BigDecimal;
+import java.util.List;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -20,14 +23,12 @@ public class Produto {
 
     private String descricao;
 
-    private Double preco;
+    private BigDecimal preco;
 
-    private Integer quantidadeEstoque;
+    private String categoria;
 
-    @Column(nullable = true)
-    private Boolean ativo;
+    private Boolean disponivel;
 
-    public void inativar() {
-        this.ativo = false;
-    }
+    private Long restauranteId;
+
 }
